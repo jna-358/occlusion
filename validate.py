@@ -278,9 +278,6 @@ def main_hyperopt():
 
 
 if __name__ == "__main__":
-    train_single("training_configs/real_world_trajectory.json")
-
-if False: # and __name__ == "__main__":
     # Parse the input arguments
     parser = argparse.ArgumentParser()
     choices = [
