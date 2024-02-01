@@ -24,7 +24,7 @@
     "k": 2,
     "SMOOTHING_RATIO": 0.9,
     "PBAR": true,
-    "SAVE_BEST": true,
-    "FILENAME": "data/real_data/data_real_cam_1_6h_ss_mindist_5e-2_distances.pkl",
+    "SAVE_BEST": false,
+    "FILENAME": "data/real_data/data_real_cam_1_6h_ss_mindist_5e-2_distances_clean.pkl",
     "NAME": "real_world"
 }
