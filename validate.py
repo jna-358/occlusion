@@ -18,6 +18,7 @@ import matplotlib.pyplot as plt
 import scipy.optimize
 from trajectory_optimization import main as trajectory_optimization_main
 from train import train
+import multiprocessing
 
 def main_increasing_duration(skip=False):
     dirname = "data/Nov08_11-05-20"  # "data/real_data"
@@ -243,7 +244,7 @@ def main_hyperopt():
     tuner = ray.tune.Tuner(
         ray.tune.with_resources(
             ray.tune.with_parameters(train, config_default=config_default),
-            resources={"cpu": 6, "gpu": 1},
+            resources={"cpu": multiprocessing.cpu_count(), "gpu": 1},
         ),
         tune_config=ray.tune.TuneConfig(
             metric="min_bal_acc_val",
