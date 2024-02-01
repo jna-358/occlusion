@@ -162,22 +162,26 @@ def main():
     plt.xlabel("Iteration")
     plt.ylabel("Angle")
     plt.title("Joint angles")
+    plt.savefig(png_path := os.path.join(output_dir, f"trajectory_angles.png"))
+    print(f"Saved plot to {png_path}")
 
     plt.figure(figsize=(8, 4))
     plt.plot(visibility_history, label="Optimization")
-
     plt.xlabel("Iteration")
     plt.ylabel("Visibility")
     plt.legend()
     plt.title("Visibility")
+    plt.savefig(png_path := os.path.join(output_dir, f"trajectory_visibility.png"))
+    print(f"Saved plot to {png_path}")
 
     plt.figure(figsize=(8, 4))
     plt.plot(pos_error_history)
     plt.xlabel("Iteration")
     plt.ylabel("Position error / m")
     plt.title("Position error")
+    plt.savefig(png_path := os.path.join(output_dir, f"trajectory_pos_error.png"))
+    print(f"Saved plot to {png_path}")
     plt.show()
-
 
 if __name__ == "__main__":
     main()
