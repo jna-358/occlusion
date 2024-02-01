@@ -9,6 +9,7 @@ __pycache__/
 *.gif
 *.pdf
 *.svg
+/data/*.pkl
 
 # C extensions
 *.so
