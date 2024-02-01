@@ -1,0 +1,61 @@
+{
+    "metrics": {
+        "min_bal_acc_val": 0.21799010038375854,
+        "min_bal_acc_test": 0.20690059661865234,
+        "timestamp": 1706809462,
+        "checkpoint_dir_name": "checkpoint_000050",
+        "should_checkpoint": true,
+        "done": false,
+        "training_iteration": 51,
+        "trial_id": "3e67ecbc",
+        "date": "2024-02-01_18-44-22",
+        "time_this_iter_s": 0.44117259979248047,
+        "time_total_s": 25.301686763763428,
+        "pid": 39004,
+        "hostname": "DESKTOP-EOEDGKQ",
+        "node_ip": "127.0.0.1",
+        "config": {
+            "LEARNING_RATE": 0.09486936124859692,
+            "NUM_HIDDEN": 75,
+            "HIDDEN_LAYERS": 1
+        },
+        "time_since_restore": 25.301686763763428,
+        "iterations_since_restore": 51,
+        "experiment_tag": "1_HIDDEN_LAYERS=1,LEARNING_RATE=0.0949,NUM_HIDDEN=75"
+    },
+    "config": {
+        "LEARNING_RATE": 0.09486936124859692,
+        "NUM_HIDDEN": 75,
+        "HIDDEN_LAYERS": 1
+    },
+    "config_default": {
+        "NUM_JOINTS": 7,
+        "NUM_EPOCHS": 100000,
+        "TENSORBOARD_INTERVAL": 1.0,
+        "VALUE_INTERVAL": 0.3,
+        "CHECKPOINT_INTERVAL": 10.0,
+        "DEVICE": "cuda:0",
+        "NUM_DRAW": 1000,
+        "EARLY_STOPPING": 100000,
+        "NUM_HIDDEN": 80,
+        "HIDDEN_LAYERS": 2,
+        "LEARNING_RATE": 0.01,
+        "TEST_SPLIT": 0.3,
+        "BASELINE_DATA": "G:\\Git\\occlusion_minimal\\data/Nov08-T2010-1e6/data_uniform_distances.pkl",
+        "SAVING_INTERVAL": 5,
+        "COMMENT": "p0 d0",
+        "position_assistance": false,
+        "position_reconstruction": false,
+        "distance_assistance": false,
+        "TENSORBOARD": false,
+        "SEED": 0,
+        "SAVE": false,
+        "K": 5,
+        "k": 2,
+        "SMOOTHING_RATIO": 0.9,
+        "PBAR": false,
+        "SAVE_BEST": false,
+        "TUNE_REPORT_INTERVAL": 100,
+        "FILENAME": "G:\\Git\\occlusion_minimal\\data/Nov06_15-27-56_1e5/data_ss_mindist_5e-2_distances.pkl"
+    }
+}
