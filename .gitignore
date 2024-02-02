@@ -10,6 +10,8 @@ __pycache__/
 *.pdf
 *.svg
 /data/*.pkl
+/images/*.pkl
+/images/*.npz
 
 # C extensions
 *.so
